@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #212529;
+}
+
+header {
+  background: #6d2cf4;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+#addEvent {
+  padding: 0.5rem;
+  border: 2px solid #fff;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* #addEvent:hover {} */
+
+.container {
+  width: max-content;
+  max-width: 80vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: #dee2e6;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.eventContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(30% - 1rem);
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+}
+
+.group {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.group input {
+  margin: 0.1rem;
+}
+
+.startBtn {
+  height: 2rem;
+  font-size: 1.25rem;
+  width: 35%;
+  margin: 0.25rem auto;
+  border-radius: 0.5rem;
+}
+
+.display {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .eventContainer {
+    flex-basis: 45%;
+  }
+
+  .startBtn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 95vw;
+    padding: 0.5rem;
+  }
+
+  .eventContainer {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .startBtn {
+    width: 80%;
+    height: 2.5rem;
+  }
+
+  .group {
+    font-size: 1rem;
+  }
+
+  .group input {
+    width: 100%;
+  }
+}
